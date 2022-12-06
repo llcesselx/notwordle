@@ -1,0 +1,27 @@
+body {
+    margin: auto auto;
+    border: 5px solid black;
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+}
+.game-heading {
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.game-info {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+#stage {
+    display: block;
+    margin: auto;
+    height: 600px;
+    border: 2px solid black;
+    background-color: #545454;
+}
