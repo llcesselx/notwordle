@@ -1,9 +1,7 @@
 body {
     margin: auto auto;
-    border: 5px solid black;
     background-color: rgba(0, 0, 0, 0.13);
 }
-body
 h1 {
     text-align: center;
 }
@@ -20,15 +18,14 @@ footer {
 .game-info {
     margin: auto;
     width: 100%;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    background-color: black;
 }
 .game-info p {
     padding: 15px;
     width: 50%;
     margin: auto;
     background-color: white;
+    border: 5px solid black;
+    border-radius: 10px;
 }
 .board {
     max-width: 295px;
@@ -54,4 +51,19 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.correct {
+    background-color: #005d0a;
+    color: #ffffff;
+}
+.close {
+    background-color: #d3a001;
+    color: #ffffff;
+}
+.wrong {
+    background-color: #5d5d5d;
+    color: #ffffff;
+}
+.ref {
+    font-weight: bold;
 }
