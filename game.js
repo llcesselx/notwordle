@@ -11,8 +11,8 @@ async function init() {
 
     // Front end API to get the word to guess | This came directly from frontend masters
     // The guy teaching the course, Brian Holt, walked through all of this code pretty
-    // much so its not completely original, like the API stuff, it is pretty much word
-    // for word Brian Holts code.
+    // much, so it's not completely original, like the API stuff, it is pretty much word
+    // for word Brian Holt's code.
     const res = await fetch("https://words.dev-apis.com/word-of-the-day&random=1");
     const {word: wordRes} = await res.json()
     const word = wordRes.toUpperCase();
@@ -45,7 +45,7 @@ async function init() {
         setLoading(loading);
 
         if (!validWord) {
-            markInvalidWord();
+            invalidWord();
             return;
         }
 
@@ -56,6 +56,7 @@ async function init() {
         for (let i = 0; i < answer_length; i++) {
             if (guessParts[i] === wordParts[i]) {
                 letters[row * answer_length + i].classList.add("correct");
+                map[guessParts[i]]--;
             }
         }
 
